@@ -1,12 +1,9 @@
-import { View, Text } from 'react-native'
 import React from 'react'
-import { AppText } from '@/components/app/AppText';
+import HomePage from '@/view/app/HomePage';
 
 const Index = () => {
   return (
-    <View>
-      <AppText style={{color: '#ffffff'}}>Index</AppText>
-    </View>
+    <HomePage />
   )
 }
 

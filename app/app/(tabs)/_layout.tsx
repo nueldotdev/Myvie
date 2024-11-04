@@ -7,15 +7,15 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        // tabBarActiveBackgroundColor: '#fff',
-        // tabBarLabelPosition: 'beside-icon',
         tabBarStyle: {
           // padding: 15,
           borderWidth: 0,
           marginHorizontal: 15,
-          marginBottom: 15,
+          // marginBottom: 15,
+          bottom: 10,
           borderRadius: 20,
-          backgroundColor: '#FFD7000F'
+          backgroundColor: '#FFD70051',
+          position: 'absolute',
         },
         tabBarLabelStyle: {
           fontSize: 12,

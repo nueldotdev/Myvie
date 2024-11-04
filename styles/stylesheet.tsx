@@ -2,6 +2,14 @@ import { StyleSheet } from "react-native";
 
 
 const allStyles = StyleSheet.create({
+
+  contained: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+
+
   button: {
     width: '100%',
     textAlign: 'center',

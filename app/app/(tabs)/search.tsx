@@ -1,12 +1,9 @@
-import { View, Text } from 'react-native'
+import SearchPage from '@/view/app/SearchPage'
 import React from 'react'
-import { AppText } from '@/components/app/AppText'
 
 const Search = () => {
   return (
-    <View>
-      <AppText style={{color: '#ffffff'}}>Search</AppText>
-    </View>
+    <SearchPage />
   )
 }
 

@@ -1,6 +1,23 @@
 import React from 'react';
-import { Text, TextProps } from 'react-native';
+import { Text, TextProps, StyleSheet } from 'react-native';
 
-export function AppText(props: TextProps) {
-  return <Text {...props} style={[props.style, { fontFamily: 'Poppins' }]} />;
+interface AppTextProps extends TextProps {
+  children: React.ReactNode;
 }
+
+export function AppText({ style, children, ...otherProps }: AppTextProps) {
+  return (
+    <Text
+      {...otherProps}
+      style={[styles.defaultStyle, style]} // Apply custom font styling and merge with any additional styles
+    >
+      {children}
+    </Text>
+  );
+}
+
+const styles = StyleSheet.create({
+  defaultStyle: {
+    fontFamily: 'Poppins', // Set default font family
+  },
+});
